@@ -1,9 +1,5 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
-import House from "../House/House";
-import Campsite from "../Campsite/Campsite";
-import Cave from "../Cave/Cave";
-import Forest from "../Forest/Forest";
+import { Link } from "react-router-dom";
 
 const StartWindow = () => {
   return (
@@ -18,13 +14,6 @@ const StartWindow = () => {
           <Link to="/about">About</Link>
         </li>
       </ul>
-
-      {/* <Routes>
-        <Route path="/campsite" element={<Campsite />} />
-        <Route path="/house" element={<House />} />
-        <Route path="/cave" element={<Cave />} />
-        <Route path="/forest" element={<Forest />} />
-      </Routes> */}
     </>
   );
 };

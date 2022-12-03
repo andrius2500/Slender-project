@@ -1,7 +1,30 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Campsite = () => {
-  return <div>Campsite</div>;
+  return (
+    <div>
+      <h1>Camspite</h1>
+      <ul>
+        <li>
+          <h2>Return</h2>
+          <Link to="/start">Return</Link>
+        </li>
+        <li>
+          <h2>House</h2>
+          <Link to="/house">House</Link>
+        </li>
+        <li>
+          <h2>Go to forest</h2>
+          <Link to="/forest">Go to forest</Link>
+        </li>
+        <li>
+          <h2>Go to car</h2>
+          <Link to="/car-location">Go to car</Link>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default Campsite;

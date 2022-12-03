@@ -7,8 +7,16 @@ const House = () => {
       <h1>House</h1>
       <ul>
         <li>
-          <h2>Forest</h2>
-          <Link to="/forest">Forest</Link>
+          <h2>Camp</h2>
+          <Link to="/campsite">Camp</Link>
+        </li>
+        <li>
+          <h2>Inside the house</h2>
+          <Link to="/inside-house">Inside</Link>
+        </li>
+        <li>
+          <h2>Return</h2>
+          <Link to="/start">Return</Link>
         </li>
       </ul>
     </div>
