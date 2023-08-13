@@ -1,26 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./first-path.css";
 
 const FirstPath = () => {
   return (
-    <ul>
-      <li>
-        <h2>House</h2>
-        <Link to="/house">House</Link>
-      </li>
-      <li>
-        <h2>Campsite</h2>
-        <Link to="/campsite">Campsite</Link>
-      </li>
-      <li>
-        <h2>Cave</h2>
-        <Link to="/cave">Cave</Link>
-      </li>
-      <li>
-        <h2>Forest</h2>
-        <Link to="/forest">Forest</Link>
-      </li>
-    </ul>
+    <div className="first-path--container">
+      <ul className="first-path--ul">
+        <li className="first-path--li">
+          <Link to="/house" className="arrow up">
+            {/* House */}
+          </Link>
+        </li>
+        <li className="first-path--li">
+          <Link to="/campsite" className="arrow diagonally-right">
+            {/* Campsite */}
+          </Link>
+        </li>
+        <li className="first-path--li">
+          <Link to="/cave" className="arrow left">
+            {/* Cave */}
+          </Link>
+        </li>
+        <li className="first-path--li">
+          <Link to="/forest" className="arrow right">
+            {/* Forest */}
+          </Link>
+        </li>
+      </ul>
+    </div>
   );
 };
 

@@ -1,0 +1,33 @@
+.first-path--container {
+  display: flex;
+  justify-content: center;
+}
+.first-path--container .first-path--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+.first-path--container .first-path--ul .arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+}
+.first-path--container .first-path--ul .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.first-path--container .first-path--ul .diagonally-right {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+.first-path--container .first-path--ul .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.first-path--container .first-path--ul .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}/*# sourceMappingURL=first-path.css.map */

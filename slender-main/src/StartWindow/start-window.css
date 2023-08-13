@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.start-window--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/forest.svg");
+  background-size: cover;
+  height: 100vh;
+}
+.start-window--container .start-window--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+.start-window--container .start-window--li {
+  margin-top: 30px;
+}
+.start-window--container .start-window--li .start-window--btn {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.start-window--container .start-window--li .start-window--btn:hover {
+  color: #b9b9bb;
+}
+.start-window--container .start-window--li .start-window--start-btn {
+  padding-left: 10px;
+}/*# sourceMappingURL=start-window.css.map */

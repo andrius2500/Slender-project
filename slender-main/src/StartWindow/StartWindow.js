@@ -1,20 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./start-window.css";
 
 const StartWindow = () => {
   return (
-    <>
-      <ul>
-        <li>
-          <h2>Chooose</h2>
-          <Link to="/start">Start</Link>
+    <div className="start-window--container">
+      <ul className="start-window--ul">
+        <li className="start-window--li">
+          <Link
+            to="/start"
+            className="start-window--btn start-window--start-btn"
+          >
+            Start
+          </Link>
         </li>
-        <li>
-          <h2>About</h2>
-          <Link to="/about">About</Link>
+        <li className="start-window--li">
+          <Link to="/about" className="start-window--btn">
+            About
+          </Link>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 
