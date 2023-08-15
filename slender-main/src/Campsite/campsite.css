@@ -1,0 +1,7 @@
+.campsite--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/campsite.svg");
+  background-size: cover;
+  height: 100vh;
+}/*# sourceMappingURL=campsite.css.map */

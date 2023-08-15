@@ -1,20 +1,47 @@
 .first-path--container {
   display: flex;
   justify-content: center;
+  background-image: url("./img/forest.svg");
+  background-size: cover;
+  height: 100vh;
 
   .first-path--ul {
     margin: 0;
+    width: 20%;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     list-style: none;
 
+    .first-path--lower-arrows-wrapper,
+    .first-path--upper-arrows-wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .first-path--upper-arrows-wrapper {
+      width: 40%;
+      margin: 1rem 40%;
+    }
+
+    .first-path--li-arrow-left {
+      margin-right: 3rem;
+    }
+
+    .first-path--li-diagonally-right {
+      margin-top: 1.5rem;
+      padding-left: 1rem;
+    }
+
     .arrow {
-      border: solid black;
+      border: solid #ffff;
       border-width: 0 5px 5px 0;
       display: inline-block;
       padding: 20px;
+      &:hover {
+        border-color: #b9b9bb;
+      }
     }
 
     .up {

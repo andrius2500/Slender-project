@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./campsite.css";
 
 const Campsite = () => {
   return (
-    <div>
+    <div className="campsite--container">
       <h1>Camspite</h1>
       <ul>
         <li>
