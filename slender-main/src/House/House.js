@@ -1,22 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./house.css";
 
 const House = () => {
   return (
-    <div>
-      <h1>House</h1>
-      <ul>
+    <div className="house--container">
+      <ul className="house--ul">
         <li>
-          <h2>Camp</h2>
-          <Link to="/campsite">Camp</Link>
+          <Link to="/inside-house" className="arrow up">
+            {/* Inside */}
+          </Link>
         </li>
         <li>
-          <h2>Inside the house</h2>
-          <Link to="/inside-house">Inside</Link>
+          <Link to="/campsite" className="arrow right">
+            {/* Camp */}
+          </Link>
         </li>
         <li>
-          <h2>Return</h2>
-          <Link to="/start">Return</Link>
+          <Link to="/start" className="arrow down">
+            {/* Return */}
+          </Link>
         </li>
       </ul>
     </div>

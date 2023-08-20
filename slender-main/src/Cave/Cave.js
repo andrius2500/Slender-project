@@ -1,23 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./cave.css";
+
+// TODO: Make new inside cave component
 
 const Cave = () => {
   return (
-    <div>
-      <h1>Cave</h1>
-      <ul>
+    <div className="cave-entrance--container">
+      <ul className="cave-entrance--ul">
         <li>
-          <h2>Return</h2>
-          <Link to="/start">Return</Link>
+          <Link to="/" className="arrow up">
+            {/* Return */}
+          </Link>
         </li>
         <li>
-          <h2>Turn left</h2>
-          <Link to="/left-cave-inside">Turn left</Link>
+          <Link to="/start" className="arrow right">
+            {/* Return */}
+          </Link>
+        </li>
+
+        {/* <li>
+          <Link to="/left-cave-inside" className="arrow left">
+            Turn left
+          </Link>
         </li>
         <li>
-          <h2>Turn right</h2>
-          <Link to="/right-cave-inside">Turn right</Link>
-        </li>
+          <Link to="/right-cave-inside" className="arrow rigth">
+            Turn rights
+          </Link>
+        </li> */}
       </ul>
     </div>
   );

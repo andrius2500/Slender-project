@@ -1,0 +1,34 @@
+.cave-entrance--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/cave-entrance.svg");
+  background-size: cover;
+  height: 100vh;
+}
+.cave-entrance--container .cave-entrance--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+.cave-entrance--container .cave-entrance--ul li:nth-child(2) {
+  margin-left: 4rem;
+}
+.cave-entrance--container .cave-entrance--ul .arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+}
+.cave-entrance--container .cave-entrance--ul .arrow:hover {
+  border-color: #b9b9bb;
+}
+.cave-entrance--container .cave-entrance--ul .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.cave-entrance--container .cave-entrance--ul .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}/*# sourceMappingURL=cave.css.map */

@@ -1,0 +1,40 @@
+.cave-entrance--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/cave-entrance.svg");
+  background-size: cover;
+  height: 100vh;
+
+  .cave-entrance--ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+
+    li:nth-child(2) {
+      margin-left: 4rem;
+    }
+
+    .arrow {
+      border: solid #ffff;
+      border-width: 0 5px 5px 0;
+      display: inline-block;
+      padding: 20px;
+      &:hover {
+        border-color: #b9b9bb;
+      }
+    }
+
+    .up {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+
+    .right {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+}
