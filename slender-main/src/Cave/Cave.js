@@ -9,26 +9,11 @@ const Cave = () => {
     <div className="cave-entrance--container">
       <ul className="cave-entrance--ul">
         <li>
-          <Link to="/" className="arrow up">
-            {/* Return */}
-          </Link>
+          <Link to="/inside-cave" className="arrow up"></Link>
         </li>
         <li>
-          <Link to="/start" className="arrow right">
-            {/* Return */}
-          </Link>
+          <Link to="/start" className="arrow right"></Link>
         </li>
-
-        {/* <li>
-          <Link to="/left-cave-inside" className="arrow left">
-            Turn left
-          </Link>
-        </li>
-        <li>
-          <Link to="/right-cave-inside" className="arrow rigth">
-            Turn rights
-          </Link>
-        </li> */}
       </ul>
     </div>
   );

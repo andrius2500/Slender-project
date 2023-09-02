@@ -13,8 +13,9 @@ import CenterRoom from "./House/inside-components/CenterRoom";
 import Basement from "./House/inside-components/Basement";
 import CarLocation from "./Campsite/CarLocation";
 import Slender from "./Slender/Slender";
-import LeftSide from "./Cave/inside-components/LeftSide";
-import RightSide from "./Cave/inside-components/RightSide";
+import LeftSide from "./Cave/InsideCave/inside-components/LeftSide";
+import RightSide from "./Cave/InsideCave/inside-components/RightSide";
+import InsideCave from "./Cave/InsideCave/InsideCave";
 
 const Main = () => {
   return (
@@ -33,8 +34,9 @@ const Main = () => {
         <Route path="/center-room" element={<CenterRoom />} />
         <Route path="/basement" element={<Basement />} />
         <Route path="/car-location" element={<CarLocation />} />
-        <Route path="/left-cave-inside" element={<LeftSide />} />
-        <Route path="/right-cave-inside" element={<RightSide />} />
+        <Route path="/inside-cave" element={<InsideCave />} />
+        <Route path="/inside-cave/inside-cave-left" element={<LeftSide />} />
+        <Route path="/inside-cave/inside-cave-right" element={<RightSide />} />
       </Routes>
     </>
   );

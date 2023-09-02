@@ -1,0 +1,73 @@
+.arrow {
+  border: solid #ffff;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+  &:hover {
+    border-color: #b9b9bb;
+  }
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.inside-cave-entrance--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/inside-cave.svg");
+  background-size: cover;
+  height: 100vh;
+
+  .inside-cave-entrance--ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    width: 20%;
+
+    .inside-cave-entrance--li {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .inside-cave-entrance--go-back {
+      text-align: center;
+    }
+  }
+}
+
+.inside-cave-right-side--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./inside-components/img/inside-cave-right.svg");
+  background-size: cover;
+  height: 100vh;
+
+  .inside-cave-right-side--ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+  }
+}
