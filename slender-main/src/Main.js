@@ -9,7 +9,6 @@ import Cave from "./Cave/Cave";
 import Forest from "./Forest/Forest";
 import InsideHouse from "./House/inside-components/InsideHouse";
 import LeftRoom from "./House/inside-components/LeftRoom";
-import CenterRoom from "./House/inside-components/CenterRoom";
 import Basement from "./House/inside-components/Basement";
 import CarLocation from "./Campsite/CarLocation";
 import Slender from "./Slender/Slender";
@@ -31,7 +30,6 @@ const Main = () => {
         <Route path="/inside-house" element={<InsideHouse />} />
         <Route path="/left-room" element={<LeftRoom />} />
         <Route path="/game-over" element={<Slender />} />
-        <Route path="/center-room" element={<CenterRoom />} />
         <Route path="/basement" element={<Basement />} />
         <Route path="/car-location" element={<CarLocation />} />
         <Route path="/inside-cave" element={<InsideCave />} />

@@ -1,0 +1,53 @@
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+}
+.arrow:hover {
+  border-color: #b9b9bb;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.house-lobby-container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/house-hallway.svg");
+  background-size: cover;
+  height: 100vh;
+}
+.house-lobby-container .house-lobby--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+
+.house-stairway--container {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}
+.house-stairway--container .house-stairway--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}/*# sourceMappingURL=inside-house.css.map */

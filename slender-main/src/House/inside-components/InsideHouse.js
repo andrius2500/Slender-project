@@ -1,26 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./inside-house.css";
 
 const InsideHouse = () => {
   return (
-    <div>
-      <h1>Inside house - main lobby</h1>
-      <ul>
+    <div className="house-lobby-container">
+      <ul className="house-lobby--ul">
         <li>
-          <h2>Left room</h2>
-          <Link to="/left-room">Left room</Link>
+          <Link to="/game-over" className="arrow up"></Link>
         </li>
         <li>
-          <h2>Center room</h2>
-          <Link to="/center-room">Center room</Link>
+          <Link to="/left-room" className="arrow left"></Link>
         </li>
         <li>
-          <h2>Right room</h2>
-          <Link to="/game-over">Right room</Link>
-        </li>
-        <li>
-          <h2>Return</h2>
-          <Link to="/house">Return</Link>
+          <Link to="/house" className="arrow down"></Link>
         </li>
       </ul>
     </div>
