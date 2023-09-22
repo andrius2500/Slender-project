@@ -7,19 +7,13 @@ const House = () => {
     <div className="house--container">
       <ul className="house--ul">
         <li>
-          <Link to="/inside-house" className="arrow up">
-            {/* Inside */}
-          </Link>
+          <Link to="/inside-house" className="arrow up"></Link>
         </li>
         <li>
-          <Link to="/campsite" className="arrow right">
-            {/* Camp */}
-          </Link>
+          <Link to="/campsite" className="arrow right"></Link>
         </li>
         <li>
-          <Link to="/start" className="arrow down">
-            {/* Return */}
-          </Link>
+          <Link to="/start" className="arrow down"></Link>
         </li>
       </ul>
     </div>

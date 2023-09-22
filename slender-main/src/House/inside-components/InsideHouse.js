@@ -10,7 +10,7 @@ const InsideHouse = () => {
           <Link to="/game-over" className="arrow up"></Link>
         </li>
         <li>
-          <Link to="/left-room" className="arrow left"></Link>
+          <Link to="/stairway" className="arrow left"></Link>
         </li>
         <li>
           <Link to="/house" className="arrow down"></Link>

@@ -37,10 +37,14 @@
   transform: translateY(-50%);
   list-style: none;
 }
+.house-lobby-container .house-lobby--ul li:nth-child(2) {
+  margin-left: -4rem;
+}
 
 .house-stairway--container {
   display: flex;
   justify-content: center;
+  background-image: url("./img/stairway.svg");
   background-size: cover;
   height: 100vh;
 }

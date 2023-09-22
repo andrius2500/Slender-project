@@ -1,0 +1,16 @@
+.slender--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/slender.svg");
+  background-size: cover;
+  height: 100vh;
+}
+.slender--container .slender--link {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slender--container .slender--link h1 {
+  color: red;
+}/*# sourceMappingURL=slender.css.map */

@@ -8,27 +8,19 @@ const FirstPath = () => {
       <ul className="first-path--ul">
         <div className="first-path--upper-arrows-wrapper">
           <li className="first-path--li">
-            <Link to="/house" className="arrow up">
-              {/* House */}
-            </Link>
+            <Link to="/house" className="arrow up"></Link>
           </li>
           <li className="first-path--li first-path--li-diagonally-right">
-            <Link to="/campsite" className="arrow diagonally-right">
-              {/* Campsite */}
-            </Link>
+            <Link to="/campsite" className="arrow diagonally-right"></Link>
           </li>
         </div>
 
         <div className="first-path--lower-arrows-wrapper">
           <li className="first-path--li first-path--li-arrow-left">
-            <Link to="/cave" className="arrow left">
-              {/* Cave */}
-            </Link>
+            <Link to="/cave" className="arrow left"></Link>
           </li>
           <li className="first-path--li">
-            <Link to="/forest" className="arrow right">
-              {/* Forest */}
-            </Link>
+            <Link to="/forest" className="arrow right"></Link>
           </li>
         </div>
       </ul>

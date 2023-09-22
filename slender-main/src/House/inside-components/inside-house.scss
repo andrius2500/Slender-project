@@ -23,6 +23,8 @@
   -webkit-transform: rotate(135deg);
 }
 
+// House styles
+
 .house-lobby-container {
   display: flex;
   justify-content: center;
@@ -37,13 +39,19 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     list-style: none;
+
+    li:nth-child(2) {
+      margin-left: -4rem; //TODO: need to find out whyt margin-right doesn't work
+    }
   }
 }
+
+// StairwayToBasement styles
 
 .house-stairway--container {
   display: flex;
   justify-content: center;
-  //   background-image: url("./img/house-hallway.svg");
+  background-image: url("./img/stairway.svg");
   background-size: cover;
   height: 100vh;
 

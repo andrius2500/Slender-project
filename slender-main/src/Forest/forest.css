@@ -1,0 +1,43 @@
+.forest--container {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/forest2.svg");
+  background-size: cover;
+  height: 100vh;
+}
+.forest--container .forest--ul {
+  width: 250px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+}
+.forest--container .forest--ul .forest--arrow-up {
+  text-align: center;
+}
+.forest--container .forest--ul .forest--li {
+  display: flex;
+  justify-content: space-around;
+}
+.forest--container .forest--ul .arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+}
+.forest--container .forest--ul .arrow:hover {
+  border-color: #b9b9bb;
+}
+.forest--container .forest--ul .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.forest--container .forest--ul .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.forest--container .forest--ul .right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}/*# sourceMappingURL=forest.css.map */

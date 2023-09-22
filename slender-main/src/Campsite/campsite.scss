@@ -1,7 +1,67 @@
+.arrow {
+  border: solid #ffff;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 20px;
+  &:hover {
+    border-color: #b9b9bb;
+  }
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.diagonally-left--down {
+  transform: rotate(-270deg);
+  -webkit-transform: rotate(-270deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 .campsite--container {
   display: flex;
   justify-content: center;
   background-image: url("./img/campsite.svg");
   background-size: cover;
   height: 100vh;
+
+  .campsite--ul {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style: none;
+    width: 250px;
+    text-align: center;
+
+    .campiste--arrow-left {
+      margin-top: 1rem;
+    }
+
+    .campsite--left-arrows-wrapper {
+      margin-right: 8.5rem;
+    }
+
+    .campiste--arrow-diagonally-left--down {
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+
+    .campiste--arrow-down,
+    .campiste--arrow-up {
+      margin-left: 1rem;
+      margin-top: -1rem;
+    }
+  }
 }

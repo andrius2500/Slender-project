@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./slender.css";
 
 const Slender = () => {
   return (
-    <div>
-      <h1>SLENDER - GAME OVER</h1>
-      <Link to="/start">Start over</Link>
+    <div className="slender--container">
+      <div className="slender--link">
+        <h1>SLENDER - GAME OVER</h1>
+
+        <Link to="/start">Start over</Link>
+      </div>
     </div>
   );
 };

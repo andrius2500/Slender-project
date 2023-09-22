@@ -1,23 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./forest.css";
 
 const Forest = () => {
   return (
-    <div>
-      <h1>Forest</h1>
-      <ul>
-        <li>
-          <h2>Return to start</h2>
-          <Link to="/start">Return to start</Link>
+    <div className="forest--container">
+      <ul className="forest--ul">
+        <li className="forest--arrow-up">
+          <Link to="/campsite" className="arrow up"></Link>
         </li>
-        <li>
-          <h2>Campsite</h2>
-          <Link to="/campsite">Campsite</Link>
-        </li>
-        <li>
-          <h2>Further to foster</h2>
-          <Link to="/game-over">Further to forest</Link>
-        </li>
+        <div className="forest--li">
+          <li>
+            <Link to="/start" className="arrow left"></Link>
+          </li>
+          <li>
+            <Link to="/game-over" className="arrow right"></Link>
+          </li>
+        </div>
       </ul>
     </div>
   );

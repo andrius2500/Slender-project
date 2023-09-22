@@ -1,37 +1,26 @@
-.first-path--container {
+.forest--container {
   display: flex;
   justify-content: center;
-  background-image: url("./img/forest1.svg");
+  background-image: url("./img/forest2.svg");
   background-size: cover;
   height: 100vh;
 
-  .first-path--ul {
+  .forest--ul {
+    width: 250px;
     margin: 0;
-    width: 15%;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     list-style: none;
 
-    .first-path--lower-arrows-wrapper,
-    .first-path--upper-arrows-wrapper {
+    .forest--arrow-up {
+      text-align: center;
+    }
+
+    .forest--li {
       display: flex;
       justify-content: space-around;
-    }
-
-    .first-path--upper-arrows-wrapper {
-      width: 40%;
-      margin: 1rem 40%;
-    }
-
-    .first-path--li-arrow-left {
-      margin-right: 3rem;
-    }
-
-    .first-path--li-diagonally-right {
-      margin-top: 1.5rem;
-      padding-left: 1rem;
     }
 
     .arrow {
@@ -47,11 +36,6 @@
     .up {
       transform: rotate(-135deg);
       -webkit-transform: rotate(-135deg);
-    }
-
-    .diagonally-right {
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
     }
 
     .left {

@@ -5,23 +5,22 @@ import "./campsite.css";
 const Campsite = () => {
   return (
     <div className="campsite--container">
-      <h1>Camspite</h1>
-      <ul>
-        <li>
-          <h2>Return</h2>
-          <Link to="/start">Return</Link>
+      <ul className="campsite--ul">
+        <li className="campiste--arrow-up">
+          <Link to="/inside-tent" className="arrow up"></Link>
         </li>
-        <li>
-          <h2>House</h2>
-          <Link to="/house">House</Link>
-        </li>
-        <li>
-          <h2>Go to forest</h2>
-          <Link to="/forest">Go to forest</Link>
-        </li>
-        <li>
-          <h2>Go to car</h2>
-          <Link to="/car-location">Go to car</Link>
+
+        <div className="campsite--left-arrows-wrapper">
+          <li className="campiste--arrow-left">
+            <Link to="/house" className="arrow left"></Link>
+          </li>
+          <li className="campiste--arrow-diagonally-left--down">
+            <Link to="/start" className="arrow diagonally-left--down"></Link>
+          </li>
+        </div>
+
+        <li className="campiste--arrow-down">
+          <Link to="/forest" className="arrow down"></Link>
         </li>
       </ul>
     </div>
