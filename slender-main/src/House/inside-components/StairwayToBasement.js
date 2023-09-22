@@ -7,7 +7,7 @@ const LeftRoom = () => {
     <div className="house-stairway--container">
       <ul className="house-stairway--ul">
         <li>
-          <Link to="/basement" className="arrow up"></Link>
+          <Link to="/found-note" className="arrow up"></Link>
         </li>
         <li>
           <Link to="/inside-house" className="arrow down"></Link>

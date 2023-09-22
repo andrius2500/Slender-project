@@ -9,12 +9,10 @@ import Cave from "./Cave/Cave";
 import Forest from "./Forest/Forest";
 import InsideHouse from "./House/inside-components/InsideHouse";
 import StairwayToBasement from "./House/inside-components/StairwayToBasement";
-import Basement from "./House/inside-components/Basement";
-import InsideTent from "./Campsite/InsideTent";
 import Slender from "./Slender/Slender";
-import LeftSide from "./Cave/InsideCave/inside-components/LeftSide";
 import RightSide from "./Cave/InsideCave/inside-components/RightSide";
 import InsideCave from "./Cave/InsideCave/InsideCave";
+import Note from "./Note/Note";
 
 const Main = () => {
   return (
@@ -30,10 +28,8 @@ const Main = () => {
         <Route path="/inside-house" element={<InsideHouse />} />
         <Route path="/stairway" element={<StairwayToBasement />} />
         <Route path="/game-over" element={<Slender />} />
-        <Route path="/basement" element={<Basement />} />
-        <Route path="/inside-tent" element={<InsideTent />} />
+        <Route path="/found-note" element={<Note />} />
         <Route path="/inside-cave" element={<InsideCave />} />
-        <Route path="/inside-cave/inside-cave-left" element={<LeftSide />} />
         <Route path="/inside-cave/inside-cave-right" element={<RightSide />} />
       </Routes>
     </>

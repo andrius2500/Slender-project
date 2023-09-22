@@ -7,7 +7,7 @@ const Campsite = () => {
     <div className="campsite--container">
       <ul className="campsite--ul">
         <li className="campiste--arrow-up">
-          <Link to="/inside-tent" className="arrow up"></Link>
+          <Link to="/found-note" className="arrow up"></Link>
         </li>
 
         <div className="campsite--left-arrows-wrapper">
