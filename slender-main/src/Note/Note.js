@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./note.css";
 
-const Note = () => {
+const Note = ({ title, paragraph }) => {
   return (
     <div class="content-main">
       <div class="content-box">

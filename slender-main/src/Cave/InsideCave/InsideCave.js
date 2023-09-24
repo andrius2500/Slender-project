@@ -8,7 +8,10 @@ const Cave = () => {
       <ul className="inside-cave-entrance--ul">
         <div className="inside-cave-entrance--li">
           <li>
-            <Link to="/found-note" className="arrow left"></Link>
+            <Link
+              to="/inside-cave/inside-cave-left"
+              className="arrow left"
+            ></Link>
           </li>
           <li>
             <Link
