@@ -1,7 +1,5 @@
 .inside-tent--container {
-  display: flex;
-  justify-content: center;
-  background-image: url("./img/inside-tent.svg");
+  background-image: url("../img/campsite.svg");
   background-size: cover;
   height: 100vh;
 }/*# sourceMappingURL=inside-tent.css.map */

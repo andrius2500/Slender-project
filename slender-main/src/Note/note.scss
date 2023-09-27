@@ -24,7 +24,10 @@ p {
 .content-main {
   position: relative;
   width: 400px;
-  margin: 40px auto;
+  margin: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   .content-box {
     height: auto;
@@ -65,7 +68,7 @@ p {
       );
     }
     &:before {
-      background-color: $bg-color;
+      background-color: #3e3f40;
       top: 0;
     }
     &:after {

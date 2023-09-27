@@ -64,4 +64,10 @@
   top: 50%;
   transform: translateY(-50%);
   list-style: none;
+}
+
+.inside-cave-left-side--container {
+  background-image: url("./inside-components/img/inside-cave-left.svg");
+  background-size: cover;
+  height: 100vh;
 }/*# sourceMappingURL=inside-cave.css.map */

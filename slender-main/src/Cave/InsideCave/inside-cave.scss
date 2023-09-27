@@ -55,6 +55,8 @@
   }
 }
 
+// Right side of the cave styles
+
 .inside-cave-right-side--container {
   display: flex;
   justify-content: center;
@@ -70,4 +72,12 @@
     transform: translateY(-50%);
     list-style: none;
   }
+}
+
+// Left side of the cave styles
+
+.inside-cave-left-side--container {
+  background-image: url("./inside-components/img/inside-cave-left.svg");
+  background-size: cover;
+  height: 100vh;
 }

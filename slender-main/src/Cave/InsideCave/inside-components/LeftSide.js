@@ -5,15 +5,8 @@ import "../inside-cave.css";
 
 const LeftSide = () => {
   return (
-    <div className="inside-cave-right-side--container">
-      <Note />
-      <ul className="inside-cave-right-side--ul">
-        <li>
-          <Link to="/inside-cave" className="arrow down">
-            {/* Return */}
-          </Link>
-        </li>
-      </ul>
+    <div className="inside-cave-left-side--container">
+      <Note paragraph="faktai apie mane" linkUrl="/inside-cave" />
     </div>
   );
 };

@@ -5,7 +5,10 @@ import "./inside-tent.css";
 const InsideTent = () => {
   return (
     <div className="inside-tent--container">
-      <Note />
+      <Note
+        paragraph="karjeros faktai su datom"
+        linkUrl="/house/inside-house/stairway"
+      />
     </div>
   );
 };

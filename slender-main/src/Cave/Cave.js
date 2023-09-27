@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./cave.css";
 
-// TODO: Make new inside cave component
-
 const Cave = () => {
   return (
     <div className="cave-entrance--container">
