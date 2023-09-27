@@ -1,6 +1,10 @@
+@font-face {
+  font-family: slenderFont;
+  src: url("../Assets/font/slender_font.ttf");
+}
 body {
   background-color: #eee;
-  font-family: "Roboto Slab";
+  font-family: slenderFont;
   font-weight: 300;
   color: #333;
   text-rendering: optimizeLegibility;

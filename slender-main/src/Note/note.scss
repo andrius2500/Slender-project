@@ -2,9 +2,14 @@ $bg-color: #eee;
 $main-color: #e0c9a6;
 $text-color: #333;
 
+@font-face {
+  font-family: slenderFont;
+  src: url("../Assets/font/slender_font.ttf");
+}
+
 body {
   background-color: $bg-color;
-  font-family: "Roboto Slab";
+  font-family: slenderFont;
   font-weight: 300;
   color: $text-color;
   text-rendering: optimizeLegibility;
