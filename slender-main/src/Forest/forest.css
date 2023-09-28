@@ -19,25 +19,4 @@
 .forest--container .forest--ul .forest--li {
   display: flex;
   justify-content: space-around;
-}
-.forest--container .forest--ul .arrow {
-  border: solid white;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 20px;
-}
-.forest--container .forest--ul .arrow:hover {
-  border-color: #b9b9bb;
-}
-.forest--container .forest--ul .up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-.forest--container .forest--ul .left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-.forest--container .forest--ul .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }/*# sourceMappingURL=forest.css.map */

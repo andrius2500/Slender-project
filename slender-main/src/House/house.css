@@ -14,25 +14,4 @@
 }
 .house--container .house--ul li:nth-child(2) {
   margin-left: 4rem;
-}
-.house--container .house--ul .arrow {
-  border: solid white;
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 20px;
-}
-.house--container .house--ul .arrow:hover {
-  border-color: #b9b9bb;
-}
-.house--container .house--ul .up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-.house--container .house--ul .down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.house--container .house--ul .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }/*# sourceMappingURL=house.css.map */
