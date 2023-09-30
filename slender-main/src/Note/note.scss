@@ -1,20 +1,4 @@
-$bg-color: #eee;
 $main-color: #e0c9a6;
-$text-color: #333;
-
-@font-face {
-  font-family: slenderFont;
-  src: url("../Assets/font/slender_font.ttf");
-}
-
-body {
-  background-color: $bg-color;
-  font-family: slenderFont;
-  font-weight: 300;
-  color: $text-color;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
 
 h2 {
   font-weight: 400;
@@ -27,9 +11,9 @@ p {
 }
 
 .content-main {
+  scale: 0.2;
   position: relative;
   width: 400px;
-  margin: auto;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);

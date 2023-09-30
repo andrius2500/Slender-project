@@ -8,6 +8,10 @@ const InsideBasement = () => {
       <Note
         paragraph="trumpas aprasymas apie karjera"
         linkUrl="/house/inside-house/stairway"
+        notePostion={{
+          top: "40%",
+          left: "20rem",
+        }}
       />
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./inside-house.css";
+import { useGlitch } from "react-powerglitch";
 
 const InsideHouse = () => {
   return (
