@@ -1,8 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+// import forestSound from "../Assets/sound_effects/test.mp3";
 import "./start-window.css";
 
 const StartWindow = () => {
+  // const audio = new Audio(forestSound);
+
+  // useEffect(() => {
+  //   play();
+
+  //   return () => {
+  //     stop();
+  //   };
+  // });
+
+  // function play() {
+  //   audio.play();
+  // }
+
+  // function stop() {
+  //   audio.pause();
+  // }
+
   return (
     <div className="start-window--container">
       <ul className="start-window--ul">
