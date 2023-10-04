@@ -24,40 +24,37 @@ const Main = () => {
   const location = useLocation();
   return (
     <>
-      <Glitch>
-        <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<StartWindow />} />
-            <Route path="/start" element={<FirstPath />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/campsite" element={<Campsite />} />
-            <Route path="/campsite/inside-tent" element={<InsideTent />} />
-            <Route path="/house" element={<House />} />
-            <Route path="/cave" element={<Cave />} />
-            <Route path="/forest" element={<Forest />} />
-            <Route path="/house/inside-house" element={<InsideHouse />} />
-            <Route
-              path="/house/inside-house/stairway"
-              element={<StairwayToBasement />}
-            />
-            <Route
-              path="/house/inside-house/stairway/inside-basement"
-              element={<InsideBasement />}
-            />
-            <Route path="/game-over" element={<Slender />} />
-            <Route path="/found-note" element={<Note />} />
-            <Route path="/inside-cave" element={<InsideCave />} />
-            <Route
-              path="/inside-cave/inside-cave-right"
-              element={<RightSide />}
-            />
-            <Route
-              path="/inside-cave/inside-cave-left"
-              element={<LeftSide />}
-            />
-          </Routes>
-        </AnimatePresence>
-      </Glitch>
+      {/* <Glitch> */}
+      <AnimatePresence mode="wait" initial={false}>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<StartWindow />} />
+          <Route path="/start" element={<FirstPath />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/campsite" element={<Campsite />} />
+          <Route path="/campsite/inside-tent" element={<InsideTent />} />
+          <Route path="/house" element={<House />} />
+          <Route path="/cave" element={<Cave />} />
+          <Route path="/forest" element={<Forest />} />
+          <Route path="/house/inside-house" element={<InsideHouse />} />
+          <Route
+            path="/house/inside-house/stairway"
+            element={<StairwayToBasement />}
+          />
+          <Route
+            path="/house/inside-house/stairway/inside-basement"
+            element={<InsideBasement />}
+          />
+          <Route path="/game-over" element={<Slender />} />
+          <Route path="/found-note" element={<Note />} />
+          <Route path="/inside-cave" element={<InsideCave />} />
+          <Route
+            path="/inside-cave/inside-cave-right"
+            element={<RightSide />}
+          />
+          <Route path="/inside-cave/inside-cave-left" element={<LeftSide />} />
+        </Routes>
+      </AnimatePresence>
+      {/* </Glitch> */}
     </>
   );
 };

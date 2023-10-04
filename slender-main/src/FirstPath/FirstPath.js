@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import TransitionWrapper from "../TransitionWrapper";
 import { playForrestAudio } from "../utils/forrest-effect";
 import walkingEffect from "../utils/walking-effect";
@@ -8,7 +7,7 @@ import "./first-path.css";
 
 const FirstPath = () => {
   useEffect(() => {
-    playForrestAudio();
+    // playForrestAudio();
   });
 
   return (

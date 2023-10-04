@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { playForrestAudio } from "../utils/forrest-effect";
 import walkingEffect from "../utils/walking-effect";
+import TransitionWrapper from "../TransitionWrapper";
 import "./house.css";
 
 const House = () => {
@@ -11,12 +11,7 @@ const House = () => {
   // });
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 2 }}
-    >
+    <TransitionWrapper>
       <div className="house--container">
         <ul className="house--ul">
           <li onClick={() => walkingEffect()}>
@@ -30,7 +25,7 @@ const House = () => {
           </li>
         </ul>
       </div>
-    </motion.div>
+    </TransitionWrapper>
   );
 };
 
