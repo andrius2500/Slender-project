@@ -2,25 +2,25 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TransitionWrapper from "../TransitionWrapper";
 import { playForrestAudio } from "../utils/forrest-effect";
-import walkingEffect from "../utils/walking-effect";
+import forestWalkingEffect from "../utils/forest-walking-effect";
 import "./first-path.css";
 
 const FirstPath = () => {
   useEffect(() => {
-    // playForrestAudio();
+    playForrestAudio();
   });
 
   return (
     <TransitionWrapper>
       <div className="first-path--container">
-        <ul className="first-path--ul" onClick={() => walkingEffect()}>
+        <ul className="first-path--ul" onClick={() => forestWalkingEffect()}>
           <div className="first-path--upper-arrows-wrapper">
             <li className="first-path--li">
               <Link to="/house" className="arrow up"></Link>
             </li>
             <li
               className="first-path--li first-path--li-diagonally-right"
-              onClick={() => walkingEffect()}
+              onClick={() => forestWalkingEffect()}
             >
               <Link to="/campsite" className="arrow diagonally-right"></Link>
             </li>
@@ -28,12 +28,15 @@ const FirstPath = () => {
 
           <div
             className="first-path--lower-arrows-wrapper"
-            onClick={() => walkingEffect()}
+            onClick={() => forestWalkingEffect()}
           >
             <li className="first-path--li first-path--li-arrow-left">
               <Link to="/cave" className="arrow left"></Link>
             </li>
-            <li className="first-path--li" onClick={() => walkingEffect()}>
+            <li
+              className="first-path--li"
+              onClick={() => forestWalkingEffect()}
+            >
               <Link to="/forest" className="arrow right"></Link>
             </li>
           </div>

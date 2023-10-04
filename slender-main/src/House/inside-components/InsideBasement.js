@@ -1,6 +1,8 @@
 import React from "react";
 import "./inside-house.css";
 import TransitionWrapper from "../../TransitionWrapper";
+import hallwayWalkingEffect from "../../utils/hallway-walking-effect";
+
 import Note from "../../Note/Note";
 
 const InsideBasement = () => {

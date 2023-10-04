@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { playForrestAudio } from "../utils/forrest-effect";
-import walkingEffect from "../utils/walking-effect";
+import forestWalkingEffect from "../utils/forest-walking-effect";
 import TransitionWrapper from "../TransitionWrapper";
 import "./house.css";
 
@@ -14,13 +14,13 @@ const House = () => {
     <TransitionWrapper>
       <div className="house--container">
         <ul className="house--ul">
-          <li onClick={() => walkingEffect()}>
+          <li onClick={() => forestWalkingEffect()}>
             <Link to="/house/inside-house" className="arrow up"></Link>
           </li>
-          <li onClick={() => walkingEffect()}>
+          <li onClick={() => forestWalkingEffect()}>
             <Link to="/campsite" className="arrow right"></Link>
           </li>
-          <li onClick={() => walkingEffect()}>
+          <li onClick={() => forestWalkingEffect()}>
             <Link to="/start" className="arrow down"></Link>
           </li>
         </ul>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import walkingEffect from "../utils/walking-effect";
+import forestWalkingEffect from "../utils/forest-walking-effect";
 import TransitionWrapper from "../TransitionWrapper";
 import "./forest.css";
 
@@ -9,14 +9,17 @@ const Forest = () => {
     <TransitionWrapper>
       <div className="forest--container">
         <ul className="forest--ul">
-          <li className="forest--arrow-up" onClick={() => walkingEffect()}>
+          <li
+            className="forest--arrow-up"
+            onClick={() => forestWalkingEffect()}
+          >
             <Link to="/campsite" className="arrow up"></Link>
           </li>
           <div className="forest--li">
-            <li onClick={() => walkingEffect()}>
+            <li onClick={() => forestWalkingEffect()}>
               <Link to="/start" className="arrow left"></Link>
             </li>
-            <li onClick={() => walkingEffect()}>
+            <li onClick={() => forestWalkingEffect()}>
               <Link to="/game-over" className="arrow right"></Link>
             </li>
           </div>

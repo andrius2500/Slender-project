@@ -1,21 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import TransitionWrapper from "../../TransitionWrapper";
+import caveWalkingEffect from "../../utils/cave-walking-effect";
+import { playCaveAudio } from "../../utils/cave-sound-effect";
+import { stopForrestAudio } from "../../utils/forrest-effect";
 import "./inside-cave.css";
 
-const Cave = () => {
+const InsideCave = () => {
+  useEffect(() => {
+    stopForrestAudio();
+    playCaveAudio();
+  });
+
   return (
     <TransitionWrapper>
       <div className="inside-cave-entrance--container">
         <ul className="inside-cave-entrance--ul">
           <div className="inside-cave-entrance--li">
-            <li>
+            <li onClick={() => caveWalkingEffect()}>
               <Link
                 to="/inside-cave/inside-cave-left"
                 className="arrow left"
               ></Link>
             </li>
-            <li>
+            <li onClick={() => caveWalkingEffect()}>
               <Link
                 to="/inside-cave/inside-cave-right"
                 className="arrow right"
@@ -23,7 +31,10 @@ const Cave = () => {
             </li>
           </div>
 
-          <li className="inside-cave-entrance--go-back">
+          <li
+            className="inside-cave-entrance--go-back"
+            onClick={() => caveWalkingEffect()}
+          >
             <Link to="/cave" className="arrow down"></Link>
           </li>
         </ul>
@@ -32,4 +43,4 @@ const Cave = () => {
   );
 };
 
-export default Cave;
+export default InsideCave;
