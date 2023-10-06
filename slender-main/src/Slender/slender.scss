@@ -12,8 +12,18 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
+    .slender--start-over {
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        color: #b9b9bb;
+      }
+    }
+
     h1 {
-      color: red;
+      color: #880808;
+      font-size: 7rem;
     }
   }
 }

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useGlitch } from "react-powerglitch";
 import {
   stopCaveAudio,
   stopForrestAudio,
@@ -17,12 +18,16 @@ const Slender = () => {
     stopInsideHouseAudio();
     gameOverSoundEffect.play();
   });
+  const glitch = useGlitch();
+
   return (
     <div className="slender--container">
       <div className="slender--link">
-        <h1>SLENDER - GAME OVER</h1>
+        <h1 ref={glitch.ref}>GAME OVER</h1>
 
-        <Link to="/start">Start over</Link>
+        <Link className="slender--start-over" to="/start">
+          Start over
+        </Link>
       </div>
     </div>
   );

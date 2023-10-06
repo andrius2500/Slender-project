@@ -11,6 +11,15 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.slender--container .slender--link .slender--start-over {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+.slender--container .slender--link .slender--start-over:hover {
+  color: #b9b9bb;
+}
 .slender--container .slender--link h1 {
-  color: red;
+  color: #880808;
+  font-size: 7rem;
 }/*# sourceMappingURL=slender.css.map */
