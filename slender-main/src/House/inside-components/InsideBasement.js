@@ -1,7 +1,7 @@
 import React from "react";
 import "./inside-house.css";
 import TransitionWrapper from "../../TransitionWrapper";
-import hallwayWalkingEffect from "../../utils/hallway-walking-effect";
+import { hallwayWalkingEffect } from "../../utils/walking-sound-effects";
 
 import Note from "../../Note/Note";
 

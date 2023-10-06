@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { playForrestAudio } from "../utils/forrest-effect";
-import forestWalkingEffect from "../utils/forest-walking-effect";
+import {
+  playForrestAudio,
+  stopInsideHouseAudio,
+} from "../utils/background-sound-effects";
+import { forestWalkingEffect } from "../utils/walking-sound-effects";
 import TransitionWrapper from "../TransitionWrapper";
 import "./house.css";
 
 const House = () => {
-  // useEffect(() => {
-  //   playForrestAudio();
-  // });
+  useEffect(() => {
+    stopInsideHouseAudio();
+    playForrestAudio();
+  });
 
   return (
     <TransitionWrapper>

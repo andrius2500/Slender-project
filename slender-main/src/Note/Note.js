@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { pickingPaperEffect } from "../utils/paper-sound-effect";
 import "./note.css";
 
 const Note = ({ paragraph, linkUrl, notePostion }) => {
@@ -11,6 +12,7 @@ const Note = ({ paragraph, linkUrl, notePostion }) => {
   });
 
   const showNote = () => {
+    pickingPaperEffect();
     const note = document.getElementById("note");
     note.style.scale = 1;
     note.style.margin = "0 auto";

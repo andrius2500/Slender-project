@@ -1,20 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { stopForrestAudio } from "../../utils/forrest-effect";
-import hallwayWalkingEffect from "../../utils/hallway-walking-effect";
+import { stopForrestAudio } from "../../utils/background-sound-effects";
+import { hallwayWalkingEffect } from "../../utils/walking-sound-effects";
+import { playInsideHouseAudio } from "../../utils/background-sound-effects";
 import TransitionWrapper from "../../TransitionWrapper";
 import "./inside-house.css";
 
 const InsideHouse = () => {
+  const [transition, setTransition] = useState(2);
+
   useEffect(() => {
     stopForrestAudio();
+    playInsideHouseAudio();
   });
 
   return (
-    <TransitionWrapper>
+    <TransitionWrapper transitionDuration={transition}>
       <div className="house-lobby-container">
         <ul className="house-lobby--ul">
-          <li onClick={() => hallwayWalkingEffect()}>
+          <li onClick={() => setTransition(0)}>
             <Link to="/game-over" className="arrow up"></Link>
           </li>
           <li onClick={() => hallwayWalkingEffect()}>

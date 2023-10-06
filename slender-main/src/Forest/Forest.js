@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import forestWalkingEffect from "../utils/forest-walking-effect";
+import { forestWalkingEffect } from "../utils/walking-sound-effects";
 import TransitionWrapper from "../TransitionWrapper";
 import "./forest.css";
 
 const Forest = () => {
+  const [transition, setTransition] = useState(2);
+
   return (
-    <TransitionWrapper>
+    <TransitionWrapper transitionDuration={transition}>
       <div className="forest--container">
         <ul className="forest--ul">
           <li
@@ -19,7 +21,7 @@ const Forest = () => {
             <li onClick={() => forestWalkingEffect()}>
               <Link to="/start" className="arrow left"></Link>
             </li>
-            <li onClick={() => forestWalkingEffect()}>
+            <li onClick={() => setTransition(0)}>
               <Link to="/game-over" className="arrow right"></Link>
             </li>
           </div>

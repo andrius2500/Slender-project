@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import forestWalkingEffect from "../utils/forest-walking-effect";
+import { forestWalkingEffect } from "../utils/walking-sound-effects";
 import TransitionWrapper from "../TransitionWrapper";
 import "./campsite.css";
 
