@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import { pickingPaperEffect } from "../utils/paper-sound-effect";
 import "./note.css";
 
-const Note = ({ paragraph, linkUrl, notePostion }) => {
+const Note = ({ paragraph, notePostion, collectNote }) => {
+  const [noteShown, setNoteShown] = useState(false);
+
   useEffect(() => {
     const note = document.getElementById("note");
     note.style.margin = notePostion?.margin;
@@ -12,12 +13,12 @@ const Note = ({ paragraph, linkUrl, notePostion }) => {
   });
 
   const showNote = () => {
-    pickingPaperEffect();
-    const note = document.getElementById("note");
-    note.style.scale = 1;
-    note.style.margin = "0 auto";
-    note.style.top = "50%";
-    note.style.left = "0";
+    if (!noteShown) {
+      pickingPaperEffect();
+      setNoteShown(true);
+      const note = document.getElementById("note");
+      note.classList.add("test");
+    }
   };
 
   return (
@@ -25,7 +26,7 @@ const Note = ({ paragraph, linkUrl, notePostion }) => {
       <div className="content-box">
         <h2>About me</h2>
         <p>{paragraph}</p>
-        <Link to={`${linkUrl}`}>Go back</Link>
+        <button onClick={() => collectNote(true)}>Collect</button>
       </div>
     </div>
   );

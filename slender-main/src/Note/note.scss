@@ -10,6 +10,13 @@ p {
   line-height: 25px;
 }
 
+.content-main.test {
+  scale: 1;
+  margin: 0 auto;
+  top: 50% !important; //need to find a fix because it gets overwritten by inline styles
+  left: 0 !important;
+}
+
 .content-main {
   scale: 0.2;
   position: relative;
@@ -17,6 +24,7 @@ p {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  z-index: 1;
 
   .content-box {
     height: auto;

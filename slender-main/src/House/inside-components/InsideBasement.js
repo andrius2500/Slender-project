@@ -1,23 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./inside-house.css";
 import TransitionWrapper from "../../TransitionWrapper";
-import { hallwayWalkingEffect } from "../../utils/walking-sound-effects";
+import { stairwayWalkingEffect } from "../../utils/walking-sound-effects";
 
 import Note from "../../Note/Note";
 
 const InsideBasement = () => {
+  const [noteCollected, setNoteCollected] = useState(false);
+
   return (
     <TransitionWrapper>
       <div className="inside-basement--container">
-        <Note
-          paragraph="trumpas aprasymas apie karjera"
-          linkUrl="/house/inside-house/stairway"
-          notePostion={{
-            top: "40%",
-            left: "20rem",
-          }}
-        />
+        {!noteCollected && (
+          <Note
+            collectNote={setNoteCollected}
+            paragraph="trumpas aprasymas apie karjera"
+            linkUrl="/house/inside-house/stairway"
+            notePostion={{
+              top: "40%",
+              left: "20rem",
+            }}
+          />
+        )}
       </div>
+
+      <ul className="inside-basement--ul">
+        <li onClick={() => stairwayWalkingEffect()}>
+          <Link to="/house/inside-house/stairway" className="arrow down"></Link>
+        </li>
+      </ul>
     </TransitionWrapper>
   );
 };
