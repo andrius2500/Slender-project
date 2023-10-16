@@ -1,7 +1,8 @@
+// FIX IMPORTS
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import StartWindow from "./StartWindow/StartWindow";
-import About from "./About/About";
+import About from "./components/About/About";
 import FirstPath from "./FirstPath/FirstPath";
 import House from "./House/House";
 import Campsite from "./Campsite/Campsite";

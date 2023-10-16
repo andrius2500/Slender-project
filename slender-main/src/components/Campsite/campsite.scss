@@ -1,6 +1,4 @@
 .campsite--container {
-  // display: flex;/
-  // justify-content: center;
   background-image: url("./img/campsite.svg");
   background-size: cover;
   height: 100vh;
@@ -41,9 +39,4 @@
     margin-left: 1rem;
     margin-top: -1rem;
   }
-}
-
-.diagonally-left--down {
-  transform: rotate(-270deg);
-  -webkit-transform: rotate(-270deg);
 }

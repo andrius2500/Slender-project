@@ -46,6 +46,16 @@ body {
   -webkit-transform: rotate(135deg);
 }
 
+.diagonally-left--down {
+  transform: rotate(-270deg);
+  -webkit-transform: rotate(-270deg);
+}
+
+.diagonally-right {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
 /* Grain effect */
 .grain {
   &:before {

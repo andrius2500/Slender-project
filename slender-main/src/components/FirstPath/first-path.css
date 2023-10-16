@@ -28,8 +28,4 @@
 .first-path--container .first-path--ul .first-path--li-diagonally-right {
   margin-top: 1.5rem;
   padding-left: 1rem;
-}
-.first-path--container .first-path--ul .diagonally-right {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
 }/*# sourceMappingURL=first-path.css.map */
