@@ -1,38 +1,45 @@
 .campsite--container {
-  display: flex;
-  justify-content: center;
+  // display: flex;/
+  // justify-content: center;
   background-image: url("./img/campsite.svg");
   background-size: cover;
   height: 100vh;
 
-  .campsite--ul {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    list-style: none;
-    width: 250px;
-    text-align: center;
+  .campsite--note-position {
+    top: 40%;
+    scale: 0.1;
+    left: 64rem;
+  }
+}
 
-    .campiste--arrow-left {
-      margin-top: 1rem;
-    }
+.campsite--ul {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+  width: 250px;
+  text-align: center;
 
-    .campsite--left-arrows-wrapper {
-      margin-right: 8.5rem;
-    }
+  .campiste--arrow-left {
+    margin-top: 1rem;
+  }
 
-    .campiste--arrow-diagonally-left--down {
-      margin-left: 2rem;
-      margin-top: 1rem;
-    }
+  .campsite--left-arrows-wrapper {
+    margin-right: 8.5rem;
+  }
 
-    .campiste--arrow-down,
-    .campiste--arrow-up {
-      margin-left: 1rem;
-      margin-top: -1rem;
-    }
+  .campiste--arrow-diagonally-left--down {
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+
+  .campiste--arrow-down,
+  .campiste--arrow-up {
+    margin-left: 1rem;
+    margin-top: -1rem;
   }
 }
 

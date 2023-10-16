@@ -1,31 +1,36 @@
 .campsite--container {
-  display: flex;
-  justify-content: center;
   background-image: url("./img/campsite.svg");
   background-size: cover;
   height: 100vh;
 }
-.campsite--container .campsite--ul {
+.campsite--container .campsite--note-position {
+  top: 40%;
+  scale: 0.1;
+  left: 64rem;
+}
+
+.campsite--ul {
   margin: 0;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
   list-style: none;
   width: 250px;
   text-align: center;
 }
-.campsite--container .campsite--ul .campiste--arrow-left {
+.campsite--ul .campiste--arrow-left {
   margin-top: 1rem;
 }
-.campsite--container .campsite--ul .campsite--left-arrows-wrapper {
+.campsite--ul .campsite--left-arrows-wrapper {
   margin-right: 8.5rem;
 }
-.campsite--container .campsite--ul .campiste--arrow-diagonally-left--down {
+.campsite--ul .campiste--arrow-diagonally-left--down {
   margin-left: 2rem;
   margin-top: 1rem;
 }
-.campsite--container .campsite--ul .campiste--arrow-down,
-.campsite--container .campsite--ul .campiste--arrow-up {
+.campsite--ul .campiste--arrow-down,
+.campsite--ul .campiste--arrow-up {
   margin-left: 1rem;
   margin-top: -1rem;
 }

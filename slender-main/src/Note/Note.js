@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { pickingPaperEffect } from "../utils/paper-sound-effect";
 import "./note.css";
 
-const Note = ({ paragraph, notePostion, collectNote }) => {
+const Note = ({ paragraph, notePostionClassName, collectNote }) => {
   const [noteShown, setNoteShown] = useState(false);
 
   useEffect(() => {
     const note = document.getElementById("note");
-    note.style.margin = notePostion?.margin;
-    note.style.top = notePostion?.top;
-    note.style.left = notePostion?.left;
+    note.classList.add(notePostionClassName);
   });
 
   const showNote = () => {
@@ -17,7 +15,7 @@ const Note = ({ paragraph, notePostion, collectNote }) => {
       pickingPaperEffect();
       setNoteShown(true);
       const note = document.getElementById("note");
-      note.classList.add("test");
+      note.classList.add("note--main-style");
     }
   };
 

@@ -9,12 +9,11 @@ h2 {
 p {
   line-height: 25px;
 }
-
-.content-main.test {
+#note.note--main-style {
   scale: 1;
   margin: 0 auto;
-  top: 50% !important; //need to find a fix because it gets overwritten by inline styles
-  left: 0 !important;
+  top: 50%;
+  left: 0;
 }
 
 .content-main {

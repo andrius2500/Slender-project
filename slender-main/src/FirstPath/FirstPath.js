@@ -7,7 +7,7 @@ import "./first-path.css";
 
 const FirstPath = () => {
   useEffect(() => {
-    playForrestAudio();
+    // playForrestAudio();
   });
 
   return (

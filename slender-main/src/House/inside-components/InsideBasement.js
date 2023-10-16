@@ -17,10 +17,7 @@ const InsideBasement = () => {
             collectNote={setNoteCollected}
             paragraph="trumpas aprasymas apie karjera"
             linkUrl="/house/inside-house/stairway"
-            notePostion={{
-              top: "40%",
-              left: "20rem",
-            }}
+            notePostionClassName={"inside-basement--note-position"}
           />
         )}
       </div>
