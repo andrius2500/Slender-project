@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import TransitionWrapper from "../../TransitionWrapper";
+import TransitionWrapper from "../../../wrappers/TransitionWrapper";
 import {
   hallwayWalkingEffect,
   stairwayWalkingEffect,
-} from "../../utils/walking-sound-effects";
+} from "../../../utils/walking-sound-effects";
 
 import "./inside-house.css";
 

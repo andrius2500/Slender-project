@@ -1,7 +1,7 @@
-import stairwayWalkingSound from "../Assets/sound_effects/stairway_walking_sound.mp3";
-import hallwayWalkingSound from "../Assets/sound_effects/hallway_walking_sound.mp3";
-import forestWalkingSound from "../Assets/sound_effects/forest_walking_sound.mp3";
-import caveWalkingSound from "../Assets/sound_effects/cave_walking_sound.mp3";
+import stairwayWalkingSound from "../assets/sound_effects/stairway_walking_sound.mp3";
+import hallwayWalkingSound from "../assets/sound_effects/hallway_walking_sound.mp3";
+import forestWalkingSound from "../assets/sound_effects/forest_walking_sound.mp3";
+import caveWalkingSound from "../assets/sound_effects/cave_walking_sound.mp3";
 
 const stairwayWalkingAudio = new Audio(stairwayWalkingSound);
 export const stairwayWalkingEffect = () => {

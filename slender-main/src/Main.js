@@ -1,22 +1,22 @@
 // FIX IMPORTS
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import StartWindow from "./StartWindow/StartWindow";
+import StartWindow from "./components/StartWindow/StartWindow";
 import About from "./components/About/About";
-import FirstPath from "./FirstPath/FirstPath";
-import House from "./House/House";
-import Campsite from "./Campsite/Campsite";
-import Cave from "./Cave/Cave";
-import Forest from "./Forest/Forest";
-import InsideHouse from "./House/inside-components/InsideHouse";
-import StairwayToBasement from "./House/inside-components/StairwayToBasement";
-import InsideBasement from "./House/inside-components/InsideBasement";
-import Slender from "./Slender/Slender";
-import RightSide from "./Cave/InsideCave/inside-components/RightSide";
-import LeftSide from "./Cave/InsideCave/inside-components/LeftSide";
-import InsideCave from "./Cave/InsideCave/InsideCave";
-import Note from "./Note/Note";
-import Glitch from "./GlitchEffectWrapper";
+import FirstPath from "./components/FirstPath/FirstPath";
+import House from "./components/House/House";
+import Campsite from "./components/Campsite/Campsite";
+import Cave from "./components/Cave/Cave";
+import Forest from "./components/Forest/Forest";
+import InsideHouse from "./components/House/inside-components/InsideHouse";
+import StairwayToBasement from "./components/House/inside-components/StairwayToBasement";
+import InsideBasement from "./components/House/inside-components/InsideBasement";
+import Slender from "./components/Slender/Slender";
+import RightSide from "./components/Cave/InsideCave/inside-components/RightSide";
+import LeftSide from "./components/Cave/InsideCave/inside-components/LeftSide";
+import InsideCave from "./components/Cave/InsideCave/InsideCave";
+import Note from "./components/Note/Note";
+import Glitch from "./wrappers/GlitchEffectWrapper";
 import { AnimatePresence } from "framer-motion";
 import "./global.css";
 

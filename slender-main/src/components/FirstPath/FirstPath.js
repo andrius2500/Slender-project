@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import TransitionWrapper from "../TransitionWrapper";
-import { playForrestAudio } from "../utils/background-sound-effects";
-import { forestWalkingEffect } from "../utils/walking-sound-effects";
+import TransitionWrapper from "../../wrappers/TransitionWrapper";
+import { playForrestAudio } from "../../utils/background-sound-effects";
+import { forestWalkingEffect } from "../../utils/walking-sound-effects";
 import "./first-path.css";
 
 const FirstPath = () => {

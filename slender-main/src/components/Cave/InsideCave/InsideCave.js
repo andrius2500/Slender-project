@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import TransitionWrapper from "../../TransitionWrapper";
-import { caveWalkingEffect } from "../../utils/walking-sound-effects";
+import TransitionWrapper from "../../../wrappers/TransitionWrapper";
+import { caveWalkingEffect } from "../../../utils/walking-sound-effects";
 import {
   playCaveAudio,
   stopForrestAudio,
-} from "../../utils/background-sound-effects";
+} from "../../../utils/background-sound-effects";
 import "./inside-cave.css";
 
 const InsideCave = () => {

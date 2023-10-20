@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { forestWalkingEffect } from "../utils/walking-sound-effects";
-import TransitionWrapper from "../TransitionWrapper";
+import { forestWalkingEffect } from "../../utils/walking-sound-effects";
+import TransitionWrapper from "../../wrappers/TransitionWrapper";
 import {
   stopCaveAudio,
   playForrestAudio,
-} from "../utils/background-sound-effects";
+} from "../../utils/background-sound-effects";
 
 import "./cave.css";
 

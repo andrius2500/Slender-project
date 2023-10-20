@@ -1,6 +1,6 @@
-import forestSound from "../Assets/sound_effects/forrest_sound.mp3";
-import caveSound from "../Assets/sound_effects/cave_sound_effect.mp3";
-import houseSound from "../Assets/sound_effects/house_sound_effect.mp3";
+import forestSound from "../assets/sound_effects/forrest_sound.mp3";
+import caveSound from "../assets/sound_effects/cave_sound_effect.mp3";
+import houseSound from "../assets/sound_effects/house_sound_effect.mp3";
 
 const forrestAudio = new Audio(forestSound);
 export const playForrestAudio = () => {

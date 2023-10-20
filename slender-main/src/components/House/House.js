@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import {
   playForrestAudio,
   stopInsideHouseAudio,
-} from "../utils/background-sound-effects";
-import { forestWalkingEffect } from "../utils/walking-sound-effects";
-import TransitionWrapper from "../TransitionWrapper";
+} from "../../utils/background-sound-effects";
+import { forestWalkingEffect } from "../../utils/walking-sound-effects";
+import TransitionWrapper from "../../wrappers/TransitionWrapper";
 import "./house.css";
 
 const House = () => {

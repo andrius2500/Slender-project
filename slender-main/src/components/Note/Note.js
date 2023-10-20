@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { pickingPaperEffect } from "../utils/paper-sound-effect";
+import { pickingPaperEffect } from "../../utils/paper-sound-effect";
 import "./note.css";
 
 const Note = ({ paragraph, notePostionClassName, collectNote }) => {

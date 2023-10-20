@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-// import forestSound from "../Assets/sound_effects/test.mp3";
+// import forestSound from "../assets/sound_effects/test.mp3";
 import "./start-window.css";
 
 const StartWindow = () => {

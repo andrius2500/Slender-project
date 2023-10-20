@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./inside-house.css";
-import TransitionWrapper from "../../TransitionWrapper";
-import { stairwayWalkingEffect } from "../../utils/walking-sound-effects";
+import TransitionWrapper from "../../../wrappers/TransitionWrapper";
+import { stairwayWalkingEffect } from "../../../utils/walking-sound-effects";
 
 import Note from "../../Note/Note";
 

@@ -5,8 +5,8 @@ import {
   stopCaveAudio,
   stopForrestAudio,
   stopInsideHouseAudio,
-} from "../utils/background-sound-effects";
-import gameOverSound from "../Assets/sound_effects/game-over-effect.mp3";
+} from "../../utils/background-sound-effects";
+import gameOverSound from "../../assets/sound_effects/game-over-effect.mp3";
 import "./slender.css";
 
 const gameOverSoundEffect = new Audio(gameOverSound);

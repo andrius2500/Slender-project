@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { stopForrestAudio } from "../../utils/background-sound-effects";
-import { hallwayWalkingEffect } from "../../utils/walking-sound-effects";
-import { playInsideHouseAudio } from "../../utils/background-sound-effects";
-import TransitionWrapper from "../../TransitionWrapper";
+import {
+  stopForrestAudio,
+  playInsideHouseAudio,
+} from "../../../utils/background-sound-effects";
+import { hallwayWalkingEffect } from "../../../utils/walking-sound-effects";
+import TransitionWrapper from "../../../wrappers/TransitionWrapper";
 import "./inside-house.css";
 
 const InsideHouse = () => {
