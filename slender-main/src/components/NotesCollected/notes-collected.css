@@ -1,1 +1,8 @@
-/*# sourceMappingURL=notes-collected.css.map */
+.notes-test {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+.notes-test h1 {
+  color: white;
+}/*# sourceMappingURL=notes-collected.css.map */
