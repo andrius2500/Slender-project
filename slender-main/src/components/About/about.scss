@@ -1,0 +1,15 @@
+.about--container {
+  background-image: url("./img/forest.svg");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+
+  .about--game-info-container {
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
