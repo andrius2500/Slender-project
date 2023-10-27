@@ -3,9 +3,9 @@ import { pickingPaperEffect } from "../../utils/paper-sound-effect";
 import { NoteContext } from "../../utils/note-context";
 import "./note.css";
 
-const Note = ({ paragraph, notePostionClassName, collectNote }) => {
+const Note = ({ paragraph, notePostionClassName, collectNote, noteFound }) => {
   const [noteShown, setNoteShown] = useState(false);
-  const useNoteContext = useContext(NoteContext);
+  const { noteStatus, setNoteCount } = useContext(NoteContext);
 
   useEffect(() => {
     const note = document.getElementById("note");
@@ -29,7 +29,14 @@ const Note = ({ paragraph, notePostionClassName, collectNote }) => {
         <button
           onClick={() => {
             collectNote(true);
-            useNoteContext.setNoteCount(useNoteContext.noteCount + 1);
+            setNoteCount({
+              count: ++noteStatus.count,
+              position: {
+                basement: noteFound.position.basement,
+                campsite: noteFound.position.campsite,
+                cave: noteFound.position.cave,
+              },
+            });
           }}
         >
           Collect

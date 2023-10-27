@@ -1,24 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import { forestWalkingEffect } from "../../utils/walking-sound-effects";
 import TransitionWrapper from "../../wrappers/TransitionWrapper";
 import Note from "../Note/Note";
+import NotesCollected from "../NotesCollected/NotesCollected";
+import { NoteContext } from "../../utils/note-context";
 import "./campsite.css";
 
 const Campsite = () => {
   const [noteCollected, setNoteCollected] = useState(false);
+  const { noteStatus } = useContext(NoteContext);
 
   return (
     <TransitionWrapper>
       <div className="campsite--container">
-        {!noteCollected && (
+        {!noteCollected && !noteStatus.position.campsite ? (
           <Note
             collectNote={setNoteCollected}
             paragraph="faktai apie mane"
             linkUrl="/inside-cave"
             notePostionClassName={"campsite--note-position"}
+            noteFound={{
+              ...noteStatus,
+              position: {
+                ...noteStatus.position,
+                campsite: true,
+              },
+            }}
           />
-        )}
+        ) : null}
       </div>
 
       <ul className="campsite--ul">
@@ -44,6 +54,8 @@ const Campsite = () => {
           <Link to="/forest" className="arrow down"></Link>
         </li>
       </ul>
+
+      <NotesCollected noteStatus={{ count: noteStatus.count, ...noteStatus }} />
     </TransitionWrapper>
   );
 };
