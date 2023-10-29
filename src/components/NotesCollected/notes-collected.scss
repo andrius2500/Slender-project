@@ -1,4 +1,10 @@
+@font-face {
+  font-family: slenderFontNumber;
+  src: url("../../assets/font/slender_font_number.ttf");
+}
+
 .notes-test {
+  //TODO: change class name
   position: absolute;
   bottom: 7%;
   right: 5%;
@@ -6,5 +12,6 @@
 
   h1 {
     color: #fff;
+    font-family: slenderFontNumber;
   }
 }
