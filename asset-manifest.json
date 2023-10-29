@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Slender-project/static/css/main.45556927.css",
+    "main.css": "/Slender-project/static/css/main.e5c0e9a7.css",
     "main.js": "/Slender-project/static/js/main.b8687ad2.js",
     "static/media/inside-cave.svg": "/Slender-project/static/media/inside-cave.5719e909615ea754a22d.svg",
     "static/media/forrest_sound.mp3": "/Slender-project/static/media/forrest_sound.238a6d9d81f39c25075c.mp3",
@@ -18,18 +18,19 @@
     "static/media/stairway.svg": "/Slender-project/static/media/stairway.94fe2b8cf458414402dc.svg",
     "static/media/game-over-effect.mp3": "/Slender-project/static/media/game-over-effect.9ef913f5102f9305f186.mp3",
     "static/media/inside-basement.svg": "/Slender-project/static/media/inside-basement.0cabecc560104e6de3dd.svg",
-    "static/media/slender_font.ttf": "/Slender-project/static/media/slender_font.98cb6f3d4f5841645030.ttf",
+    "static/media/slender_font_number.ttf": "/Slender-project/static/media/slender_font_number.98cb6f3d4f5841645030.ttf",
     "static/media/stairway_walking_sound.mp3": "/Slender-project/static/media/stairway_walking_sound.eb99e2a6a36ee7cd5a6d.mp3",
+    "static/media/slender_font_text.ttf": "/Slender-project/static/media/slender_font_text.1b5d4ac13fef78693d68.ttf",
     "static/media/cave_walking_sound.mp3": "/Slender-project/static/media/cave_walking_sound.3039160b18293a9ce5d1.mp3",
     "static/media/forest_walking_sound.mp3": "/Slender-project/static/media/forest_walking_sound.93e99dd35c0aa424892c.mp3",
     "static/media/hallway_walking_sound.mp3": "/Slender-project/static/media/hallway_walking_sound.10494e66da640706bbf8.mp3",
     "static/media/paper-effect.mp3": "/Slender-project/static/media/paper-effect.4ef1725749a7119bb780.mp3",
     "index.html": "/Slender-project/index.html",
-    "main.45556927.css.map": "/Slender-project/static/css/main.45556927.css.map",
+    "main.e5c0e9a7.css.map": "/Slender-project/static/css/main.e5c0e9a7.css.map",
     "main.b8687ad2.js.map": "/Slender-project/static/js/main.b8687ad2.js.map"
   },
   "entrypoints": [
-    "static/css/main.45556927.css",
+    "static/css/main.e5c0e9a7.css",
     "static/js/main.b8687ad2.js"
   ]
 }
