@@ -1,22 +1,17 @@
-$main-color: #e0c9a6;
-
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 20px;
+@font-face {
+  font-family: slenderFontText;
+  src: url("../../assets/font/slender_font_text.ttf");
 }
 
-p {
-  line-height: 25px;
-}
 #note.note--main-style {
   scale: 1;
   margin: 0 auto;
   top: 50%;
   left: 0;
+  transform: skew(0deg, 0deg);
 }
 
-.content-main {
+.scale-paper {
   scale: 0.2;
   position: relative;
   width: 400px;
@@ -24,52 +19,100 @@ p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 1;
+}
 
-  .content-box {
-    height: auto;
-    overflow: hidden;
-    padding: 20px;
-    background: $main-color;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+.content-main {
+  .paper {
+    position: absolute;
+    height: 550px;
+    width: 450px;
+    background: #f4f4f4;
+    margin: -275px -225px;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0px 0px 5px 0px #888;
 
-    &:before,
-    &:after {
+    &::before {
       content: "";
-      height: 2px;
       position: absolute;
-      left: 0;
-      right: 0;
-      -webkit-clip-path: polygon(
-        0% 0%,
-        5% 100%,
-        10% 0%,
-        15% 100%,
-        20% 0%,
-        25% 100%,
-        30% 0%,
-        35% 100%,
-        40% 0%,
-        45% 100%,
-        50% 0%,
-        55% 100%,
-        60% 0%,
-        65% 100%,
-        70% 0%,
-        75% 100%,
-        80% 0%,
-        85% 100%,
-        90% 0%,
-        95% 100%,
-        100% 0%
+      left: 45px;
+      height: 100%;
+      width: 2px;
+      background: rgba(255, 0, 0, 0.4);
+    }
+
+    .lines {
+      margin-top: 40px;
+      height: calc(100% - 40px);
+      width: 100%;
+      background-image: repeating-linear-gradient(
+        #f4f4f4 0px,
+        #f4f4f4 24px,
+        steelblue 25px
       );
-    }
-    &:before {
-      background-color: #3e3f40;
-      top: 0;
-    }
-    &:after {
-      background-color: $main-color;
-      bottom: -2px;
+
+      &:before,
+      &:after {
+        content: "";
+        height: 3px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        -webkit-clip-path: polygon(
+          0% 0%,
+          5% 100%,
+          10% 0%,
+          15% 100%,
+          20% 0%,
+          25% 100%,
+          30% 0%,
+          35% 100%,
+          40% 0%,
+          45% 100%,
+          50% 0%,
+          55% 100%,
+          60% 0%,
+          65% 100%,
+          70% 0%,
+          75% 100%,
+          80% 0%,
+          85% 100%,
+          90% 0%,
+          95% 100%,
+          100% 0%
+        );
+      }
+      &:before {
+        background-color: #3e3f40;
+        top: 0;
+      }
+      &:after {
+        background-color: #fff;
+        bottom: -3px;
+      }
+
+      .text {
+        position: absolute;
+        top: 65px;
+        left: 55px;
+        bottom: 10px;
+        right: 10px;
+        line-height: 25px;
+        overflow: hidden;
+        outline: none;
+      }
+
+      .note-btn {
+        margin-left: 3rem;
+        border: none;
+        font-family: slenderFontText;
+        font-size: 1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: #b9b9bb;
+        }
+      }
     }
   }
 }

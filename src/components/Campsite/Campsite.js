@@ -19,7 +19,7 @@ const Campsite = () => {
             collectNote={setNoteCollected}
             paragraph="faktai apie mane"
             linkUrl="/inside-cave"
-            notePostionClassName={"campsite--note-position"}
+            notePositionClassName={"campsite--note-position"}
             noteFound={{
               ...noteStatus,
               position: {

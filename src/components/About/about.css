@@ -2,12 +2,19 @@
   background-image: url("./img/forest.svg");
   background-size: cover;
   height: 100vh;
-  color: #fff;
 }
-.about--container .about--game-info-container {
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  text-align: center;
-  transform: translateY(-50%);
+
+.about--return-btn-container {
+  position: absolute;
+  bottom: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about--return-btn-container .about--btn {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+.about--return-btn-container .about--btn:hover {
+  color: #b9b9bb;
 }/*# sourceMappingURL=about.css.map */

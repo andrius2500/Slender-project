@@ -19,6 +19,7 @@ const LeftSide = () => {
             collectNote={setNoteCollected}
             paragraph="faktai apie mane"
             linkUrl="/inside-cave"
+            notePositionClassName={"cave--note-position"}
             noteFound={{
               ...noteStatus,
               position: {

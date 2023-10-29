@@ -60,3 +60,8 @@
   transform: translate(-50%, -50%);
   list-style: none;
 }
+
+.cave--note-position {
+  scale: 0.1;
+  transform: skew(0deg, -10deg);
+}
