@@ -13,7 +13,7 @@ const InsideHouse = () => {
 
   useEffect(() => {
     stopForrestAudio();
-    // playInsideHouseAudio();
+    playInsideHouseAudio();
   });
 
   return (

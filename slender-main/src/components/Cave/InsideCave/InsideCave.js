@@ -11,7 +11,7 @@ import "./inside-cave.css";
 const InsideCave = () => {
   useEffect(() => {
     stopForrestAudio();
-    // playCaveAudio();
+    playCaveAudio();
   });
 
   return (
