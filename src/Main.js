@@ -28,8 +28,12 @@ const Main = () => {
       <Glitch>
         <NoteCount>
           <AnimatePresence mode="wait" initial={false}>
-            <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<StartWindow />} />
+            <Routes
+              basename="/Slender-project"
+              location={location}
+              key={location.pathname}
+            >
+              <Route path="/Slender-project" element={<StartWindow />} />
               <Route path="/start" element={<FirstPath />} />
               <Route path="/about" element={<About />} />
               <Route path="/campsite" element={<Campsite />} />
