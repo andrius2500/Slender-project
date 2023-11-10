@@ -1,0 +1,25 @@
+.congratulations {
+  background-color: rgb(96, 105, 117);
+  color: black;
+  position: absolute;
+  left: 45%;
+  top: 30%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+.congratulations .form-header {
+  text-align: center;
+  margin: 0;
+}
+.congratulations form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.congratulations form .input-style {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.09);
+}/*# sourceMappingURL=congratulations.css.map */

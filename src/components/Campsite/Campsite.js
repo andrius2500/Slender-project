@@ -5,6 +5,7 @@ import TransitionWrapper from "../../wrappers/TransitionWrapper";
 import Note from "../Note/Note";
 import NotesCollected from "../NotesCollected/NotesCollected";
 import { NoteContext } from "../../utils/note-context";
+import Congratulations from "../Congratulations/Congratulations";
 import "./campsite.css";
 
 const Campsite = () => {
@@ -31,31 +32,42 @@ const Campsite = () => {
         ) : null}
       </div>
 
-      <ul className="campsite--ul">
-        <div className="campsite--left-arrows-wrapper">
-          <li
-            className="campiste--arrow-left"
-            onClick={() => forestWalkingEffect()}
-          >
-            <Link to="/house" className="arrow left"></Link>
-          </li>
-          <li
-            className="campiste--arrow-diagonally-left--down"
-            onClick={() => forestWalkingEffect()}
-          >
-            <Link to="/start" className="arrow diagonally-left--down"></Link>
-          </li>
-        </div>
+      {noteStatus.count === 0 ? (
+        <Congratulations />
+      ) : (
+        <>
+          <ul className="campsite--ul">
+            <div className="campsite--left-arrows-wrapper">
+              <li
+                className="campiste--arrow-left"
+                onClick={() => forestWalkingEffect()}
+              >
+                <Link to="/house" className="arrow left"></Link>
+              </li>
+              <li
+                className="campiste--arrow-diagonally-left--down"
+                onClick={() => forestWalkingEffect()}
+              >
+                <Link
+                  to="/start"
+                  className="arrow diagonally-left--down"
+                ></Link>
+              </li>
+            </div>
 
-        <li
-          className="campiste--arrow-down"
-          onClick={() => forestWalkingEffect()}
-        >
-          <Link to="/forest" className="arrow down"></Link>
-        </li>
-      </ul>
+            <li
+              className="campiste--arrow-down"
+              onClick={() => forestWalkingEffect()}
+            >
+              <Link to="/forest" className="arrow down"></Link>
+            </li>
+          </ul>
 
-      <NotesCollected noteStatus={{ count: noteStatus.count, ...noteStatus }} />
+          <NotesCollected
+            noteStatus={{ count: noteStatus.count, ...noteStatus }}
+          />
+        </>
+      )}
     </TransitionWrapper>
   );
 };
