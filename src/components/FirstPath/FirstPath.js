@@ -13,31 +13,38 @@ const FirstPath = () => {
   return (
     <TransitionWrapper>
       <div className="first-path--container">
-        <ul className="first-path--ul" onClick={() => forestWalkingEffect()}>
+        <ul className="first-path--ul">
           <div className="first-path--upper-arrows-wrapper">
             <li className="first-path--li">
-              <Link to="/house" className="arrow up"></Link>
+              <Link
+                to="/house"
+                className="arrow up"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
-            <li
-              className="first-path--li first-path--li-diagonally-right"
-              onClick={() => forestWalkingEffect()}
-            >
-              <Link to="/campsite" className="arrow diagonally-right"></Link>
+            <li className="first-path--li first-path--li-diagonally-right">
+              <Link
+                to="/campsite"
+                className="arrow diagonally-right"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
           </div>
 
-          <div
-            className="first-path--lower-arrows-wrapper"
-            onClick={() => forestWalkingEffect()}
-          >
+          <div className="first-path--lower-arrows-wrapper">
             <li className="first-path--li first-path--li-arrow-left">
-              <Link to="/cave" className="arrow left"></Link>
+              <Link
+                to="/cave"
+                className="arrow left"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
-            <li
-              className="first-path--li"
-              onClick={() => forestWalkingEffect()}
-            >
-              <Link to="/forest" className="arrow right"></Link>
+            <li className="first-path--li">
+              <Link
+                to="/forest"
+                className="arrow right"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
           </div>
         </ul>

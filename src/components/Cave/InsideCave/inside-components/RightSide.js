@@ -11,11 +11,19 @@ const RightSide = () => {
     <TransitionWrapper transitionDuration={transition}>
       <div className="inside-cave-right-side--container">
         <ul className="inside-cave-right-side--ul">
-          <li onClick={() => setTransition(0)}>
-            <Link to="/game-over" className="arrow up"></Link>
+          <li>
+            <Link
+              to="/game-over"
+              className="arrow up"
+              onClick={() => setTransition(0)}
+            ></Link>
           </li>
-          <li onClick={() => caveWalkingEffect()}>
-            <Link to="/inside-cave" className="arrow down"></Link>
+          <li>
+            <Link
+              to="/inside-cave"
+              className="arrow down"
+              onClick={() => caveWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>

@@ -11,18 +11,27 @@ const Forest = () => {
     <TransitionWrapper transitionDuration={transition}>
       <div className="forest--container">
         <ul className="forest--ul">
-          <li
-            className="forest--arrow-up"
-            onClick={() => forestWalkingEffect()}
-          >
-            <Link to="/campsite" className="arrow up"></Link>
+          <li className="forest--arrow-up">
+            <Link
+              to="/campsite"
+              className="arrow up"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
           <div className="forest--li">
-            <li onClick={() => forestWalkingEffect()}>
-              <Link to="/start" className="arrow left"></Link>
+            <li>
+              <Link
+                to="/start"
+                className="arrow left"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
-            <li onClick={() => setTransition(0)}>
-              <Link to="/game-over" className="arrow right"></Link>
+            <li>
+              <Link
+                to="/game-over"
+                className="arrow right"
+                onClick={() => setTransition(0)}
+              ></Link>
             </li>
           </div>
         </ul>

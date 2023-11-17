@@ -6,6 +6,7 @@ import { stairwayWalkingEffect } from "../../../utils/walking-sound-effects";
 import Note from "../../Note/Note";
 import NotesCollected from "../../NotesCollected/NotesCollected";
 import { NoteContext } from "../../../utils/note-context";
+import Congratulations from "../../Congratulations/Congratulations";
 
 const InsideBasement = () => {
   const [noteCollected, setNoteCollected] = useState(false);
@@ -31,13 +32,25 @@ const InsideBasement = () => {
         ) : null}
       </div>
 
-      <ul className="inside-basement--ul">
-        <li onClick={() => stairwayWalkingEffect()}>
-          <Link to="/house/inside-house/stairway" className="arrow down"></Link>
-        </li>
-      </ul>
+      {noteStatus.count === 3 ? (
+        <Congratulations />
+      ) : (
+        <>
+          <ul className="inside-basement--ul">
+            <li>
+              <Link
+                to="/house/inside-house/stairway"
+                className="arrow down"
+                onClick={() => stairwayWalkingEffect()}
+              ></Link>
+            </li>
+          </ul>
 
-      <NotesCollected noteStatus={{ count: noteStatus.count, ...noteStatus }} />
+          <NotesCollected
+            noteStatus={{ count: noteStatus.count, ...noteStatus }}
+          />
+        </>
+      )}
     </TransitionWrapper>
   );
 };

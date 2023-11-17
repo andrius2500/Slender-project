@@ -19,11 +19,19 @@ const Cave = () => {
     <TransitionWrapper>
       <div className="cave-entrance--container">
         <ul className="cave-entrance--ul">
-          <li onClick={() => forestWalkingEffect()}>
-            <Link to="/inside-cave" className="arrow up"></Link>
+          <li>
+            <Link
+              to="/inside-cave"
+              className="arrow up"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
-          <li onClick={() => forestWalkingEffect()}>
-            <Link to="/start" className="arrow right"></Link>
+          <li>
+            <Link
+              to="/start"
+              className="arrow right"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>

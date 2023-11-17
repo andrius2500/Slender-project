@@ -19,25 +19,28 @@ const InsideCave = () => {
       <div className="inside-cave-entrance--container">
         <ul className="inside-cave-entrance--ul">
           <div className="inside-cave-entrance--li">
-            <li onClick={() => caveWalkingEffect()}>
+            <li>
               <Link
                 to="/inside-cave/inside-cave-left"
                 className="arrow left"
+                onClick={() => caveWalkingEffect()}
               ></Link>
             </li>
-            <li onClick={() => caveWalkingEffect()}>
+            <li>
               <Link
                 to="/inside-cave/inside-cave-right"
                 className="arrow right"
+                onClick={() => caveWalkingEffect()}
               ></Link>
             </li>
           </div>
 
-          <li
-            className="inside-cave-entrance--go-back"
-            onClick={() => caveWalkingEffect()}
-          >
-            <Link to="/cave" className="arrow down"></Link>
+          <li className="inside-cave-entrance--go-back">
+            <Link
+              to="/cave"
+              className="arrow down"
+              onClick={() => caveWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>

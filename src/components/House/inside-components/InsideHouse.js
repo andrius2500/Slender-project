@@ -20,17 +20,26 @@ const InsideHouse = () => {
     <TransitionWrapper transitionDuration={transition}>
       <div className="house-lobby-container">
         <ul className="house-lobby--ul">
-          <li onClick={() => setTransition(0)}>
-            <Link to="/game-over" className="arrow up"></Link>
+          <li>
+            <Link
+              to="/game-over"
+              className="arrow up"
+              onClick={() => setTransition(0)}
+            ></Link>
           </li>
-          <li onClick={() => hallwayWalkingEffect()}>
+          <li>
             <Link
               to="/house/inside-house/stairway"
               className="arrow left"
+              onClick={() => hallwayWalkingEffect()}
             ></Link>
           </li>
-          <li onClick={() => hallwayWalkingEffect()}>
-            <Link to="/house" className="arrow down"></Link>
+          <li>
+            <Link
+              to="/house"
+              className="arrow down"
+              onClick={() => hallwayWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>

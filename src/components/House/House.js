@@ -18,14 +18,26 @@ const House = () => {
     <TransitionWrapper>
       <div className="house--container">
         <ul className="house--ul">
-          <li onClick={() => forestWalkingEffect()}>
-            <Link to="/house/inside-house" className="arrow up"></Link>
+          <li>
+            <Link
+              to="/house/inside-house"
+              className="arrow up"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
-          <li onClick={() => forestWalkingEffect()}>
-            <Link to="/campsite" className="arrow right"></Link>
+          <li>
+            <Link
+              to="/campsite"
+              className="arrow right"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
-          <li onClick={() => forestWalkingEffect()}>
-            <Link to="/start" className="arrow down"></Link>
+          <li>
+            <Link
+              to="/start"
+              className="arrow down"
+              onClick={() => forestWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>

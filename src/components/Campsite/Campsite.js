@@ -32,34 +32,34 @@ const Campsite = () => {
         ) : null}
       </div>
 
-      {noteStatus.count === 0 ? (
+      {noteStatus.count === 3 ? (
         <Congratulations />
       ) : (
         <>
           <ul className="campsite--ul">
             <div className="campsite--left-arrows-wrapper">
-              <li
-                className="campiste--arrow-left"
-                onClick={() => forestWalkingEffect()}
-              >
-                <Link to="/house" className="arrow left"></Link>
+              <li className="campiste--arrow-left">
+                <Link
+                  to="/house"
+                  className="arrow left"
+                  onClick={() => forestWalkingEffect()}
+                ></Link>
               </li>
-              <li
-                className="campiste--arrow-diagonally-left--down"
-                onClick={() => forestWalkingEffect()}
-              >
+              <li className="campiste--arrow-diagonally-left--down">
                 <Link
                   to="/start"
                   className="arrow diagonally-left--down"
+                  onClick={() => forestWalkingEffect()}
                 ></Link>
               </li>
             </div>
 
-            <li
-              className="campiste--arrow-down"
-              onClick={() => forestWalkingEffect()}
-            >
-              <Link to="/forest" className="arrow down"></Link>
+            <li className="campiste--arrow-down">
+              <Link
+                to="/forest"
+                className="arrow down"
+                onClick={() => forestWalkingEffect()}
+              ></Link>
             </li>
           </ul>
 

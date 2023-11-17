@@ -5,6 +5,7 @@ import NotesCollected from "../../../NotesCollected/NotesCollected";
 import TransitionWrapper from "../../../../wrappers/TransitionWrapper";
 import { caveWalkingEffect } from "../../../../utils/walking-sound-effects";
 import { NoteContext } from "../../../../utils/note-context";
+import Congratulations from "../../../Congratulations/Congratulations";
 import "../inside-cave.css";
 
 const LeftSide = () => {
@@ -31,13 +32,24 @@ const LeftSide = () => {
         ) : null}
       </div>
 
-      <ul className="inside-cave-left-side--ul">
-        <li onClick={() => caveWalkingEffect()}>
-          <Link to="/inside-cave" className="arrow down"></Link>
-        </li>
-      </ul>
-
-      <NotesCollected noteStatus={{ count: noteStatus.count, ...noteStatus }} />
+      {noteStatus.count === 3 ? (
+        <Congratulations />
+      ) : (
+        <>
+          <ul className="inside-cave-left-side--ul">
+            <li>
+              <Link
+                to="/inside-cave"
+                className="arrow down"
+                onClick={() => caveWalkingEffect()}
+              ></Link>
+            </li>
+          </ul>
+          <NotesCollected
+            noteStatus={{ count: noteStatus.count, ...noteStatus }}
+          />
+        </>
+      )}
     </TransitionWrapper>
   );
 };

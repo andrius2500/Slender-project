@@ -13,14 +13,19 @@ const LeftRoom = () => {
     <TransitionWrapper>
       <div className="house-stairway--container">
         <ul className="house-stairway--ul">
-          <li onClick={() => stairwayWalkingEffect()}>
+          <li>
             <Link
               to="/house/inside-house/stairway/inside-basement"
               className="arrow up"
+              onClick={() => stairwayWalkingEffect()}
             ></Link>
           </li>
-          <li onClick={() => hallwayWalkingEffect()}>
-            <Link to="/house/inside-house" className="arrow down"></Link>
+          <li>
+            <Link
+              to="/house/inside-house"
+              className="arrow down"
+              onClick={() => hallwayWalkingEffect()}
+            ></Link>
           </li>
         </ul>
       </div>
