@@ -18,7 +18,23 @@ const InsideBasement = () => {
         {!noteCollected && !noteStatus.position.basement ? (
           <Note
             collectNote={setNoteCollected}
-            paragraph="trumpas aprasymas apie karjera"
+            paragraph={
+              <>
+                My career path:
+                <br />
+                - Development intern from Sep 2020 to Dec 2020 at CarCar (now
+                called Rocket assistance)
+                <br />
+                - Junior Fullstack developer from Jan 2021 to May 2021 at
+                Lietuvos draudimas
+                <br />
+                - Junior Frontend developer from May 2021 to March 2023 at
+                Barbora Lietuva (later promoted to mid and worked till July
+                2023)
+                <br />- Software Engineer from August 2023 to present at
+                Notified
+              </>
+            }
             linkUrl="/house/inside-house/stairway"
             notePositionClassName={"inside-basement--note-position"}
             noteFound={{

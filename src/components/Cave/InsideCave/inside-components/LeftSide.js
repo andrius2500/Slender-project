@@ -18,7 +18,22 @@ const LeftSide = () => {
         {!noteCollected && !noteStatus.position.cave ? (
           <Note
             collectNote={setNoteCollected}
-            paragraph="faktai apie mane"
+            paragraph={
+              <>
+                Some interesting facts about me:
+                <br />
+                - Bachelors degree in automotive engineer
+                <br />
+                - Masters degree in business development
+                <br />
+                - At 2020 quit my job as a car salesman and started pursuing
+                programmers career
+                <br />
+                - Currently learning Angular, but have few years experience with
+                React
+                <br />- Goal is to become a fullstack developer
+              </>
+            }
             linkUrl="/inside-cave"
             notePositionClassName={"cave--note-position"}
             noteFound={{

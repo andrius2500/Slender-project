@@ -18,7 +18,16 @@ const Campsite = () => {
         {!noteCollected && !noteStatus.position.campsite ? (
           <Note
             collectNote={setNoteCollected}
-            paragraph="faktai apie mane"
+            paragraph={
+              <>
+                Some of my hobbies:
+                <br />- Huge formula 1 fan
+                <br />- Closest that i come to engineering is building lego
+                technic cars
+                <br />- Love driving motorcycles and go-carts
+                <br />- Love horror/detective/thriller books
+              </>
+            }
             linkUrl="/inside-cave"
             notePositionClassName={"campsite--note-position"}
             noteFound={{

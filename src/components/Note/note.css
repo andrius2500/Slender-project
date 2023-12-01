@@ -68,12 +68,14 @@
   line-height: 25px;
   overflow: hidden;
   outline: none;
+  letter-spacing: 2px;
 }
 .content-main .paper .lines .note-btn {
   margin-left: 3rem;
   border: none;
   font-family: slenderFontText;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
 }
 .content-main .paper .lines .note-btn:hover {
