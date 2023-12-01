@@ -4,5 +4,5 @@ Game is simple, you need to find three pages with facts about me. If slender fin
 Project is deployed with GH pages, here is the link for the game: https://andrius2500.github.io/Slender-project/
 Have fun!
 
-This project is done with React using React router 6 and SCSS
+This project is done with React using React router 6 and SCSS.
 There are some changes that needs to be done, like refactoring code, fixing some bugs, some style changes etc. Will keep updating this project!
