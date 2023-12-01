@@ -27,7 +27,7 @@ const About = () => {
         cameFromAbout={true}
       />
       <div className="about--return-btn-container">
-        <Link to="/" className="about--btn">
+        <Link to="/Slender-project" className="about--btn">
           Return
         </Link>
       </div>
