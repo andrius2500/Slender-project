@@ -3,3 +3,5 @@ But during development i decided to make it as my portfolio game so that it woul
 Game is simple, you need to find three pages with facts about me. If slender finds you first then game over.
 Project is deployed with GH pages, here is the link for the game: https://andrius2500.github.io/Slender-project/
 Have fun!
+
+This project is done with React usind React router 6 and SCSS
