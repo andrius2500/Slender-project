@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Slender-project/static/css/main.98efb7a8.css",
-    "main.js": "/Slender-project/static/js/main.7103b257.js",
+    "main.css": "/Slender-project/static/css/main.4cc5e944.css",
+    "main.js": "/Slender-project/static/js/main.89301d6b.js",
     "static/media/inside-cave.svg": "/Slender-project/static/media/inside-cave.5719e909615ea754a22d.svg",
-    "static/media/forrest_sound.mp3": "/Slender-project/static/media/forrest_sound.238a6d9d81f39c25075c.mp3",
+    "static/media/forrest_sound.mp3": "/Slender-project/static/media/forrest_sound.0250bdb5959631ffda60.mp3",
     "static/media/cave_sound_effect.mp3": "/Slender-project/static/media/cave_sound_effect.1602bf2f06a17192eebc.mp3",
     "static/media/forest1.svg": "/Slender-project/static/media/forest1.80d1c299d396a687a676.svg",
     "static/media/inside-cave-right.svg": "/Slender-project/static/media/inside-cave-right.ae66eb5fa7c5b6f46713.svg",
@@ -26,11 +26,11 @@
     "static/media/hallway_walking_sound.mp3": "/Slender-project/static/media/hallway_walking_sound.10494e66da640706bbf8.mp3",
     "static/media/paper-effect.mp3": "/Slender-project/static/media/paper-effect.4ef1725749a7119bb780.mp3",
     "index.html": "/Slender-project/index.html",
-    "main.98efb7a8.css.map": "/Slender-project/static/css/main.98efb7a8.css.map",
-    "main.7103b257.js.map": "/Slender-project/static/js/main.7103b257.js.map"
+    "main.4cc5e944.css.map": "/Slender-project/static/css/main.4cc5e944.css.map",
+    "main.89301d6b.js.map": "/Slender-project/static/js/main.89301d6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.98efb7a8.css",
-    "static/js/main.7103b257.js"
+    "static/css/main.4cc5e944.css",
+    "static/js/main.89301d6b.js"
   ]
 }
